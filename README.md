@@ -28,8 +28,8 @@ This project is a Raspberry Pi-based weather station that collects and displays 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/zelmotas/raspberry-pi-weather-station.git
-    cd raspberry-pi-weather-station
+    git clone https://github.com/zelmotas/weatherstationPi.git
+    cd weatherstationPi
     ```
 
 2. **Install required Python packages:**
