@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #444;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+p:hover {
+    transform: scale(1.05);
+}
+
+/* Temperature, Humidity, and Pressure styles */
+.temperature {
+    color: #000;
+}
+
+.temperature.cold {
+    color: #00f; /* Blue for cold temperatures */
+}
+
+.temperature.hot {
+    color: #f00; /* Red for hot temperatures */
+}
+
+.temperature.mild {
+    color: #ffa500; /* Orange for mild temperatures */
+}
+
+.humidity {
+    color: #000;
+}
+
+.humidity.low {
+    color: #00f; /* Blue for low humidity */
+}
+
+.humidity.high {
+    color: #f00; /* Red for high humidity */
+}
+
+.humidity.normal {
+    color: #00cc00; /* Green for normal humidity */
+}
+
+.pressure {
+    color: #000;
+}
+
+.pressure.low {
+    color: #00f; /* Blue for low pressure */
+}
+
+.pressure.high {
+    color: #f00; /* Red for high pressure */
+}
+
+.pressure.normal {
+    color: #00cc00; /* Green for normal pressure */
+}
+
+/* Animation for hovering over text */
+h1:hover, p:hover {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}

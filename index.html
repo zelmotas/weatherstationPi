@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi Weather Station</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Weather Station Data</h1>
+    <p class="temperature {{ 'hot' if temperature > 30 else 'cold' if temperature < 10 else 'mild' }}">
+        <strong>Temperature:</strong> {{ temperature }} °C
+    </p>
+    <p class="humidity {{ 'high' if humidity > 70 else 'low' if humidity < 30 else 'normal' }}">
+        <strong>Humidity:</strong> {{ humidity }} %
+    </p>
+    <p class="pressure {{ 'high' if pressure > 1020 else 'low' if pressure < 1000 else 'normal' }}">
+        <strong>Pressure:</strong> {{ pressure }} hPa
+    </p>
+</body>
+</html>
